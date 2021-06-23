@@ -1,0 +1,60 @@
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E2E2E2;
+  z-index: 200;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.nav-menu.hidden {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.nav-menu nav {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu nav .brandmark {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.nav-menu nav .brandmark img {
+  height: 70px;
+}
+
+.menu-list {
+  min-width: 320px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-list .menu-items a {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #931854;
+}
+
+/*# sourceMappingURL=nav-menu.css.map */

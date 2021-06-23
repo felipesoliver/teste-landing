@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  font-family: "Montserrat", sans-serif;
+  background: #E2E2E2;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.purple-btn {
+  padding: 10px;
+  position: fixed;
+  bottom: 74px;
+  left: 0;
+  width: 110px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 2px 0 #0000001f;
+  cursor: pointer;
+  background: #931854;
+  color: #FFFFFF;
+  z-index: 50;
+}
+
+.purple-btn:focus {
+  outline: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*# sourceMappingURL=general.css.map */
