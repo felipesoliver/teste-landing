@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Landing Page</title>
 </head>
 <body>
-    
+    <header class="nav-menu">
+        <nav>
+            <div class="brandmark" data-aos="right">
+                <a href="#home"><img src="./src/assets/brandmark.png" alt="Company's Brandmark"></a>                
+            </div>
+            <button class="hamburger hamburger--elastic" type="button" data-burger-btn>
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </button>
+            <ul class="menu-list" data-menu-list>
+                <li class="menu-items">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#comments">Sit amet massa vitae</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#commodo">Commodo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="purple-btn">Lorem ipsum!</button>
+        <section class="home" id="home">
+            <h1 class="title" data-aos="right">Mollis nunc sed</h1>
+            <span class="abstract" data-aos="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <img class="banner-img" src="./src/assets/banner-img.png" data-aos="left">
+            <img class="banner-bg" src="./src/assets/banner-bg.png">
+            <a class="scroll-down-btn" href="#comments"><img src="./src/assets/arrow1.svg" alt="Arrow down"></a>
+        </section>
+        <section class="comments" id="comments">
+            <ul class="comments-list" data-aos="right">
+                <li class="comments-items">
+                    <img src="./src/assets/avatar1.png" data-aos="right">
+                    <h3>Petter Stsjkin</h3>
+                    <span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                </li>
+                <li class="comments-items" data-aos="right">
+                    <img src="./src/assets/avatar2.png">
+                    <h3>Anna Mostad</h3>
+                    <span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                </li>
+                <li class="comments-items" data-aos="right">
+                    <img src="./src/assets/avatar1.png">
+                    <h3>Petter Gundam</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+                </li>
+            </ul>
+            <a class="scroll-down-btn1" href="#commodo"><img src="./src/assets/arrow2.svg" alt="Arrow down"></a>
+        </section>
+        <section class="commodo" id="commodo">
+            <div class="commodo-container">
+                <h2 class="commodo-title" data-aos="right">Quis commodo ogo aenean sed diam</h2>
+                <span class="commodo-subject" data-aos="right">Malesuada fames ac turpis egestas sed tempus urna. Lorem ipsum dolor sit amet. Sem et tortor consequat id porta. Semper risus in hendrerit gravida. Ante metus dictum at tempor commodo ullamcorper a. Viverra nibh cras pulvinar mattis nunc. Mi sit amet mauris commodo.</span>
+                <div class="commodo-card" data-aos="right">
+                    <h3>Fames ac turpis egestas maecenas!</h3>
+                    <span>Scelerisque purus semper eget duis at tellus at urna condimentum. Duis ultricies lacus sed turpis tincidunt id aliquet.</span>
+                    <a href="#"><img src="./src/assets/social-media.png" alt="LinkedIn and Facebook's icon"></a>
+                </div>
+            </div>
+            <a class="scroll-down-btn2" href="#home"><img src="./src/assets/arrow3.svg" alt="Arrow down"></a>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="module" src="./src/js/script.js"></script>
 </body>
 </html>
