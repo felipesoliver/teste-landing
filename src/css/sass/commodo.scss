@@ -1,0 +1,106 @@
+@import 'sass-features.scss';
+
+.commodo {
+    & {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .commodo-container {
+        margin: 70px 0;
+        width: 60%;
+        display: grid;
+        grid-template: 1fr 120px 1fr / 1fr 2fr 1fr;
+        color: $pri-color;
+    }
+
+    .commodo-title {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        font-family: 'Lato', sans-serif;
+        font-size: 70px;
+        font-weight: 800;
+    }
+
+    .commodo-subject {
+        margin-top: 10px;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        font-size: 15px;
+    }
+
+    .commodo-card {
+        & {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            padding: 20px;
+            width: 90%;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 10px 6px #0000000c;
+            border-radius: 8px;
+            background: $terd-color;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        span {
+            margin: 20px 0;
+            width: 96%;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        img {
+            width: 80px;
+        }
+    }
+
+    .scroll-down-btn2 {
+        @keyframes shakeUp{
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+            25% {
+                transform: translateY(5px);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            75% {
+                transform: translateY(5px);
+            }
+
+        }
+
+        & {
+            position: absolute;
+            bottom: 26px;
+            right: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: shakeUp 1.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        img {
+            width: 36px;
+        }
+    }
+}
