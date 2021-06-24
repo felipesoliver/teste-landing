@@ -1,6 +1,6 @@
 export default function initScrollAnimation() {
   const sections = document.querySelectorAll('[data-aos]');
-  const windowMetade = window.innerHeight * 0.6;
+  const windowMetade = window.innerHeight * 0.8;
 
   function AOS() {
     sections.forEach((section) => {

@@ -3,10 +3,10 @@ export default function initToggleNavBar() {
     let hideNavBar = window.pageYOffset;
     function toggleNavBar(){
         let showNavBar = window.pageYOffset;
-        if(showNavBar > hideNavBar) {
-            navTrack.classList.add('hidden');
+        if(showNavBar > hideNavBar && window.innerWidth > 768) {
+            navTrack.style.transform = 'translateY(-100%)';
         } else {
-            navTrack.classList.remove('hidden');
+            navTrack.style.transform = 'translateY(0)';
         }
         hideNavBar = showNavBar;
     }
