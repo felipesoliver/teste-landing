@@ -1,35 +1,33 @@
 [data-aos] {
-  opacity: 0;
+  opacity   : 0;
   transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
 }
 
-[data-aos="left"] {
+[data-aos=left] {
   transform: perspective(100px) translate3d(30px, 0, 0);
 }
 
-[data-aos="right"] {
+[data-aos=right] {
   transform: perspective(100px) translate3d(-30px, 0, 0);
 }
 
-[data-aos="up"] {
+[data-aos=up] {
   transform: perspective(100px) translate3d(0, 30px, 0);
 }
 
-[data-aos="down"] {
+[data-aos=down] {
   transform: perspective(100px) translate3d(0, -30px, 0);
 }
 
-[data-aos="infront"] {
+[data-aos=infront] {
   transform: perspective(100px) translate3d(0, 0, -30px);
 }
 
-[data-aos="behind"] {
-  transform: perspective(100px) translate3d(0, 0, -30px);
+[data-aos=behind] {
+  transform: perspective(100px) translate3d(0, 0, -20px);
 }
 
 [data-aos].animate {
-  opacity: 1;
+  opacity  : 1;
   transform: perspective(100px) translate3d(0, 0, 0);
 }
-
-/*# sourceMappingURL=aos.css.map */

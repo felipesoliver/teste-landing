@@ -1,6 +1,16 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
-  margin: 0;
-  padding: 0;
+  margin    : 0;
+  padding   : 0;
   box-sizing: border-box;
   list-style: none;
 }
@@ -10,9 +20,12 @@ html {
 }
 
 body {
-  max-width: 1920px;
-  font-family: "Montserrat", sans-serif;
-  background: #E2E2E2;
+  font-family      : "Montserrat", sans-serif;
+  background       : #E2E2E2;
+  -webkit-animation: fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  -moz-animation   : fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  -ms-animation    : fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  animation        : fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
 main {
@@ -20,20 +33,20 @@ main {
 }
 
 .purple-btn {
-  padding: 10px;
-  position: fixed;
-  bottom: 74px;
-  left: 0;
-  width: 110px;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
+  padding      : 10px;
+  position     : fixed;
+  bottom       : 74px;
+  left         : 0;
+  width        : 110px;
+  font-size    : 18px;
+  font-weight  : 600;
+  border       : none;
   border-radius: 0 10px 10px 0;
-  box-shadow: 2px 0 2px 0 #0000001f;
-  cursor: pointer;
-  background: #931854;
-  color: #FFFFFF;
-  z-index: 50;
+  box-shadow   : 2px 0 2px 0 #0000001f;
+  cursor       : pointer;
+  background   : #931854;
+  color        : #FFFFFF;
+  z-index      : 50;
 }
 
 .purple-btn:focus {
@@ -43,5 +56,3 @@ main {
 .hamburger {
   display: none;
 }
-
-/*# sourceMappingURL=general.css.map */

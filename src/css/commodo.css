@@ -1,87 +1,84 @@
 .commodo {
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
+  position       : relative;
+  width          : 100%;
+  height         : fit-content;
+  display        : flex;
+  align-items    : center;
   justify-content: center;
 }
+
 .commodo .commodo-container {
-  margin: 70px 0;
-  width: 60%;
-  display: grid;
+  margin       : 70px 0 100px;
+  width        : 60%;
+  display      : grid;
   grid-template: 1fr 120px 1fr/1fr 2fr 1fr;
-  color: #931854;
+  color        : #931854;
 }
+
 .commodo .commodo-title {
   grid-column: 1/4;
-  grid-row: 1/2;
+  grid-row   : 1/2;
+  min-width  : 624px;
   font-family: "Lato", sans-serif;
-  font-size: 70px;
+  font-size  : 70px;
   font-weight: 800;
 }
+
 .commodo .commodo-subject {
-  margin-top: 10px;
+  margin-top : 10px;
   grid-column: 1/4;
-  grid-row: 2/3;
-  font-size: 15px;
+  grid-row   : 2/3;
+  font-size  : 15px;
 }
+
 .commodo .commodo-card {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  padding: 20px;
-  width: 90%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
+  grid-column    : 2/3;
+  grid-row       : 3/4;
+  padding        : 20px;
+  width          : 100%;
+  height         : fit-content;
+  display        : flex;
+  align-items    : center;
   justify-content: center;
-  flex-direction: column;
-  box-shadow: 0 0 10px 6px #0000000c;
-  border-radius: 8px;
-  background: #FFFFFF;
+  flex-direction : column;
+  box-shadow     : 0 0 10px 6px #0000000c;
+  border-radius  : 8px;
+  background     : #FFFFFF;
 }
+
 .commodo .commodo-card h3 {
-  font-size: 16px;
+  font-size: 17px;
 }
+
 .commodo .commodo-card span {
-  margin: 20px 0;
-  width: 96%;
-  font-size: 12px;
+  margin    : 20px 0;
+  width     : 96%;
+  font-size : 14px;
   text-align: center;
 }
+
 .commodo .commodo-card img {
   width: 80px;
 }
-@keyframes shakeUp {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(5px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  75% {
-    transform: translateY(5px);
-  }
-}
-.commodo .scroll-down-btn2 {
-  position: absolute;
-  bottom: 26px;
-  right: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: shakeUp 1.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-}
-.commodo .scroll-down-btn2:focus {
-  outline: none;
-}
-.commodo .scroll-down-btn2 img {
-  width: 36px;
+
+.commodo .scroll-btn2 {
+  position         : absolute;
+  bottom           : 42px;
+  left             : 50%;
+  z-index          : 20;
+  display          : flex;
+  align-items      : center;
+  justify-content  : center;
+  -webkit-transform: translateX(-50%);
+  -moz-transform   : translateX(-50%);
+  -ms-transform    : translateX(-50%);
+  transform        : translateX(-50%);
 }
 
-/*# sourceMappingURL=commodo.css.map */
+.commodo .scroll-btn2:focus {
+  outline: none;
+}
+
+.commodo .scroll-btn2 img {
+  width: 36px;
+}
