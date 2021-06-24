@@ -12,23 +12,11 @@
         justify-content: center;
         background: $bg-color; 
         z-index: 200;
-        
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
 
         -webkit-transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         -moz-transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         -ms-transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    }
-
-    &.hidden {
-        -webkit-transform: translateY(-100%);
-        -moz-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        transform: translateY(-100%);
     }
 
     nav {

@@ -1,5 +1,14 @@
 @import 'sass-features.scss';
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +21,13 @@ html {
 }
 
 body {
-    max-width: 1920px;
     font-family: 'Montserrat', sans-serif;
     background: $bg-color;
+
+    -webkit-animation: fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    -moz-animation: fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    -ms-animation: fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    animation: fadeIn 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
 main {

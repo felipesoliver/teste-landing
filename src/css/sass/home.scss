@@ -1,6 +1,7 @@
 @import 'sass-features.scss';
 
 .home {
+
     & {
         position: relative;
         width: 100%;
@@ -8,12 +9,12 @@
         display: grid;
         grid-template: 16% 30% 20% 26% / 10% 50% 40%;
     }
-
+    
     .title {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
         width: 80%;
-        min-width: 445px;
+        min-width: 440px;
         height: 100%;
         font-family: 'Lato', sans-serif;
         font-size: 110px;
@@ -22,60 +23,54 @@
         color: $sec-color;
         z-index: 10;
     }
-
+    
     .abstract {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
-        min-width: 400px;
+        min-width: 580px;
         font-size: 14px;
         line-height: 1.5;
         color: $sec-color;
         z-index: 10;
     }
-
-    .banner-img {
+    
+    .banner-img-dk {
         position: absolute;
         right: -1px;
         bottom: 0;
         width: 74%;
     }
-
-    .banner-bg {
+    
+    .banner-img-mb {
+        display: none;
+    }
+    
+    .banner-bg-desktop {
         position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;
         z-index: 10;
     }
-
-    .scroll-down-btn {
-        @keyframes shakeUp{
-            0%,
-            100% {
-                transform: translateY(0)
-            }
-            25% {
-                transform: translateY(5px);
-            }
-            50% {
-                transform: translateY(-5px);
-            }
-            75% {
-                transform: translateY(5px);
-            }
-
-        }
-
+    
+    .banner-bg-mobile {
+        display: none;
+    }
+    
+    .scroll-btn {
         & {
             position: absolute;
             bottom: 20px;
-            right: 50%;
-            transform: translateX(-50%);
+            left: 50%;
             z-index: 20;
             display: flex;
             align-items: center;
             justify-content: center;
-            animation: shakeUp 1.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+            
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
         }
 
         &:focus {
@@ -83,7 +78,7 @@
         }
 
         img {
-            width: 36px;
+            width: 36px;    
         }
-    }
+    }    
 }

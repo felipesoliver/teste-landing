@@ -72,34 +72,20 @@
     }
 }
 
-.scroll-down-btn1 {
-    @keyframes shakeUp{
-        0%,
-        100% {
-            transform: translateY(0)
-        }
-        25% {
-            transform: translateY(5px);
-        }
-        50% {
-            transform: translateY(-5px);
-        }
-        75% {
-            transform: translateY(5px);
-        }
-
-    }
-
+.scroll-btn1 {
     & {
         position: absolute;
         bottom: 34px;
-        right: 50%;
-        transform: translateX(-50%);
+        left: 50%;
         z-index: 20;
         display: flex;
         align-items: center;
         justify-content: center;
-        animation: shakeUp 1.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+        
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 
     &:focus {
